@@ -1,7 +1,6 @@
 $(".notice").hide()
 $(".display").hide()
 $(".ranking").hide()
-// $(".start").hide()
 $(".left").hide()
 $(".Ox").hide()
 
@@ -17,11 +16,9 @@ var myTurnCopy
 var playerLeft = false
 
 
-// Draw and its effect on ranking
-// Choose X or O during each game alternatively
-// Show player left
-// Continue left game
-
+// To DO
+// Allow player to choose X or O during each game alternatively
+// Fix Join error after leaving if player1 has not chosen options
 
 
 var myname = ""
