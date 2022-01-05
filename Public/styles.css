@@ -1,0 +1,417 @@
+:root {
+    --body-color : #222222;
+    --font-color: hsl(0, 5%, 81%);
+    --hover-color: #444444;
+    --buton-color: #2D2D2D ;
+    --toggle-btn: hsl(25, 100%, 50%);
+    --toggle-background : hsl(0, 5%, 81%);
+    --calctxt-color: hsl(0, 0%, 10%);
+    --x-color: hsl(176, 100%, 44%);
+    --o-color: hsl(25, 100%, 57%);
+    
+
+}
+
+
+body {
+    color: var(--font-color);
+    text-align: center;
+    background-color: var(--body-color) ;
+    font-family: 'Spartan', sans-serif;
+    margin-top: 2rem;
+    margin-left: 0%;
+    margin-right: 0%;
+    align-items: center;
+}
+span{
+    padding: 0.7rem;
+}
+
+.header {
+    left: 2%;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 98%;
+    overflow: hidden;
+
+}
+.header h1{
+    margin-left: 50%;
+    height: 2rem;
+    transform: translateX(-50%);
+}
+
+.sliderDiv {
+    display: flex;
+    font-size: 0.8rem;   
+}
+.sliderDiv p{
+    margin-bottom: 0%;
+}
+.theme {
+    margin-top: 2rem;
+}
+
+
+.notice {
+    position: relative;
+    left: 10%;
+    background-color: var(--calctxt-color);
+    width: 80%;
+    height: 7rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) ;
+    padding: 0.2rem;
+    margin-top: 1rem;
+}
+.notice h1 {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+.display{
+    position: relative;
+    left: 35%;
+    background-color: var(--calctxt-color);
+    width: 30%;
+    height: 3rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) ;
+    padding: 0.2rem;    
+}
+.display h1 {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+}
+.ranking{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 2rem;
+    display: flex;
+}
+.rankingh1{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+.rankingPlayer1{
+    width: 50%;
+    background-color: var(--x-color);
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+.rankingPlayer2{
+    width: 50%;
+    background-color: var(--o-color);
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.Ox {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-gap: 10px;
+    background-color: var(--body-color);
+    border-radius: 10px;
+    padding: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.buton {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--buton-color) ;
+    border-radius: 5px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    align-items: center;
+}
+.buton:hover{
+    background-color: var(--hover-color);
+}
+.PlayerX{
+    width: 3.125rem;
+    height: 3.125rem;
+    margin: auto;
+    margin-top: 20px;
+    background-color: var(--x-color);
+    clip-path: polygon(9% 0, 0 9%, 40% 50%, 0 91%, 9% 100%, 50% 62%, 91% 100%, 100% 91%, 60% 50%, 100% 9%, 91% 0, 50% 43%);
+
+}
+.fa-circle{
+    transform: scale(4) translateY(10px);
+    margin: auto;
+    color: var(--o-color);
+
+}
+.start{
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.create{
+    position: relative;
+    background-color: var(--calctxt-color);
+    width: 25%;
+    height: 60%;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) ;
+    padding: 2rem;
+    margin: 2rem;    
+}
+
+.startInput{
+    width: 70%;
+    border: 2px solid var(--body-color);
+    color: var(--font-color);
+    font-family: cursive;
+    font-size: 1.2rem;
+    background: none;
+    outline: none;
+    border-radius: 0.5rem;
+}
+
+.startInput:focus{
+    border-color: #adffff;
+}
+.Submit{
+    margin: 2rem auto;
+    width: 70%;
+    height: 2.5rem;
+    background-color: var(--buton-color);
+    border-radius: 0.5rem;
+    color: var(--font-color);
+    align-items: center;
+    cursor: pointer;
+}
+.Submit h2{
+   margin: 0;
+   padding: 0;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.join{
+    position: relative;
+    background-color: var(--calctxt-color);
+    width: 35%;
+    height: 60%;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2) ;
+    padding: 2rem;
+    margin: 2rem;
+}
+.joinInput{
+    display: flex;
+    gap: 1rem;
+}
+.winner{
+    background-color: var(--hover-color);
+}
+.left{
+    width: 40%;
+    left: 50%;
+    transform: translateX(-60%);
+    top: 50%;
+}
+#leftWait{
+    width: 90%;
+    font-size: 1rem;
+}
+#leftReturn{
+    width: 90%;
+    font-size: 0.9rem;
+}
+
+.slider {
+-webkit-appearance: none;
+width:50%;
+height: 27%;
+border-radius: 10px;
+overflow: hidden;
+outline: none;
+background: var(--toggle-background) ;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.9rem;
+    height: 0.9rem;
+    cursor: pointer;
+    background: var(--toggle-btn);
+    border-radius: 100%; 
+}
+
+
+
+
+
+@media (max-width: 600px){
+    .header h1{
+        position: relative;
+        top: 1rem;
+        width: 40%;
+        margin-left: 25%;
+        font-size: 1rem;
+    }
+    .display{
+        left: 20%;
+        width: 60%;
+    }
+    .notice h1{
+        font-size: 1rem;
+    }
+    .buton{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .start{
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+    }
+    .create{
+        box-sizing: border-box;
+        width: 80%;
+        align-items: flex-start;
+    }
+    .startInput{
+        width: 80%;
+    }
+    .Submit{
+        width: 80%;
+    }
+    .join{
+        box-sizing: border-box;
+        width: 80%;
+    }
+    .joinInput{
+        display: flex;
+        flex-direction: column;
+    }
+    .PlayerX{
+        position: relative;
+        margin-bottom: 3%;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .fa-circle{
+        transform: scale(3);
+        position: relative;
+        margin-top: 43%;
+    }
+    .left{
+        font-size: 0.7rem;
+    }
+    #leftWait{
+        font-size: 00.6rem;
+    }
+
+    #leftReturn{
+        font-size: 0.6rem;
+    }
+}
+@media (max-width : 330px) {
+    .header h1{
+        margin-left: 20%;
+        width: 50%;
+    }
+    .create{
+        width: 90%;
+    }
+    .join{
+        width: 90%;
+    }
+    .Submit{
+        width: 90%;
+    }
+    .startInput{
+        width: 90%;
+    }
+}
+@media (min-width: 387px) and (max-width: 600px ){
+    .header h1{
+        position: relative;
+        top: 1rem;
+        width: 40%;
+        margin-left: 25%;
+        font-size: 1.5rem;
+    }
+    .display{
+        left: 20%;
+        width: 60%;
+    }
+    .buton{
+        width: 6rem;
+        height: 6rem;
+    }
+    .create{
+        width: 65%;
+    }
+    .join{
+        width: 65%;
+    }
+    .notice h1{
+        font-size: 1.5rem;
+    }
+    .buton{
+        width: 5rem;
+        height: 5rem;
+    }
+    .PlayerX{
+        width: 3rem;
+        height: 3rem;
+    }
+    .fa-circle{
+        transform: scale(3.5)
+    }
+}
+@media (min-width: 600px) and (max-width: 852px ){
+    .header h1{
+        margin-left: 50%;
+        width: 50%;
+    }
+    .slider{
+        width: 70%;
+    }
+    .startInput{
+        width: 100%;
+    }
+    .joinInput{
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+    .Submit{
+        width: 100%;
+    }
+    .join{
+        padding: 0.5rem 2rem;
+        height: 90%;
+        
+    }
+    .join > div{
+        margin: 0.9rem auto;
+    }
+    .left{
+        width: 60%;
+    }
+
+}
