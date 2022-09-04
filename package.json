@@ -1,0 +1,28 @@
+{
+    "name": "tic-tac-toe",
+    "version": "1.0.0",
+    "description": "Tic Tac Toe Multiplayer game",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev" : "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Bharath6730/Tic-Tac-Toe.git"
+    },
+    "author": "Bharath T",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.2",
+        "random-string": "^0.2.0",
+        "socket.io": "^4.4.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    },
+    "bugs": {
+        "url": "https://github.com/Bharath6730/Tic-Tac-Toe/issues"
+    },
+    "homepage": "https://github.com/Bharath6730/Tic-Tac-Toe#readme"
+}

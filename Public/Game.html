@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/bfe05c0f59.js" crossorigin="anonymous"></script>
@@ -12,71 +11,87 @@
 <body>
 
 
-    <div class="header">
+  <div class="header">
+    <h1>Tic Tac Toe</h1>
+    <div class="sliderDiv">
+      <p class="theme">THEME</p>
+      <div class="sliderBox">
+        <p>1<span>2</span>3</p>
+        <input type="range" min="1" max="3" value="2" class="slider" id="slideTheme">
+      </div>
+    </div>
+  </div>
+
+  <section class="start">
+    <div class="create">
+      <input type="text" placeholder="Enter Your Name" autocomplete="off" id="createName" class="startInput">
+      <div class="Submit" id="createSubmit">
+        <h2>Create Game</h2>
+      </div>
+    </div>
+    <div class="join">
+      <div class="joinInput">
+        <input type="text" placeholder="Enter Your Name" autocomplete="off" id="joinName" class="startInput">
+        <input type="text" placeholder="Enter Room id" autocomplete="off" id="joinRoom" class="startInput">
+      </div>
+      <div class="Submit" id="joinSubmit">
+        <h2>Join Game</h2>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="Game">
+
+    <div class="notice">
       <h1>Tic Tac Toe</h1>
-      <div class="sliderDiv">
-        <p class="theme">THEME</p>
-        <div class="sliderBox">
-          <p>1<span>2</span>3</p>
-          <input type="range" min="1" max="3" value="2" class="slider" id="slideTheme">
-        </div>
-      </div>      
     </div>
 
-    <section class="start">
-      <div class="create">
-            <input type="text" placeholder="Enter Your Name" autocomplete="off" id="createName" class="startInput">
-          <div class="Submit" id="createSubmit"><h2>Create Game</h2></div>
+    <div class="ranking">
+      <div class="rankingPlayer1">
+        <h1 class="rankingh1">Player1 : 0</h1>
       </div>
-      <div class="join">
-        <div class="joinInput">
-          <input type="text" placeholder="Enter Your Name" autocomplete="off" id="joinName" class="startInput">
-          <input type="text" placeholder="Enter Room id" autocomplete="off" id="joinRoom" class="startInput">
-        </div>
-        <div class="Submit" id="joinSubmit"><h2>Join Game</h2></div>
+      <div class="rankingPlayer2">
+        <h1 class="rankingh1">Player2 : 0</h1>
+      </div>
     </div>
-      
-    </section>
 
-    <section class="Game">
+    <div class="display">
+      <h1>Your Turn</h1>
+    </div>
 
-      <div class="notice">
-        <h1>Tic Tac Toe</h1>
+    <div class="create left">
+      <h2>Your Opponent has left the Game.Would you like to wait for the Player to reconnect or return to home Page?
+      </h2>
+      <div class="Submit" id="leftWait">
+        <h2>Wait For Player</h2>
       </div>
-
-      <div class="ranking">
-        <div class="rankingPlayer1"><h1 class="rankingh1">Player1 : 0</h1></div>
-        <div class="rankingPlayer2"><h1 class="rankingh1">Player2 : 0</h1></div>
+      <div class="Submit" id="leftReturn">
+        <h2>Return to Home Page</h2>
       </div>
-
-      <div class="display">
-        <h1>Your Turn</h1>
+    </div>
+    <div class="Ox">
+      <div class="buton" id="01"></div>
+      <div class="buton" id="02"></div>
+      <div class="buton" id="03"></div>
+      <div class="buton" id="04"></div>
+      <div class="buton" id="05"></div>
+      <div class="buton" id="06"></div>
+      <div class="buton" id="07"></div>
+      <div class="buton" id="08"></div>
+      <div class="buton" id="09"></div>
+    </div>
+    <div class="winnerDisplay" style="display: flex; width: max-content;margin: 2rem auto 0; gap: 5rem;">
+      <div class="Submit" id="returnHome" style="width: max-content; padding: 0.2rem 2rem; margin: 0;">
+        <h2>Return Home</h2>
       </div>
-
-      <div class="create left">
-        <h2>Your Opponent has left the Game.Would you like to wait for the Player to reconnect or return to home Page?</h2>
-        <div class="Submit" id="leftWait"><h2>Wait For Player</h2></div>
-        <div class="Submit" id="leftReturn"><h2>Return to Home Page</h2></div>
+      <div class="Submit" id="nextRound" style="width: max-content; padding: 0.2rem 2rem; margin: 0;">
+        <h2>Next Round</h2>
       </div>
-
-
-      <div class="Ox">
-        <div class="buton" id = "01"></div>
-        <div class="buton" id = "02"></div>
-        <div class="buton" id = "03"></div>
-        <div class="buton" id = "04"></div>
-        <div class="buton" id = "05"></div>
-        <div class="buton" id = "06"></div>
-        <div class="buton" id = "07"></div>
-        <div class="buton" id = "08"></div>
-        <div class="buton" id = "09"></div>
-      </div>
-
-    </section>
-
-
+    </div>
+  </section>
   
-  <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="index.js"></script>
 </body>
